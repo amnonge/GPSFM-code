@@ -11,7 +11,7 @@ Licensed for noncommercial research use only.
 
 ## Background
 
-The code retrievs camera matrices and 3D points given a set of pairwise fundamental matrices.
+The code retrieves camera matrices and 3D points given a set of pairwise fundamental matrices.
 
 For more information see:
 
@@ -43,8 +43,8 @@ For compilation, enter the folder GPSFM\compileMex and run compileMexLinux or co
 We supply end-to-end code for the pipeline described in the paper.
 Important function:
 ```
-ProcessScript.m- Script to generate our data fromat from the format of http://www.maths.lth.se/matematiklth/personal/calle/dataset/dataset.html. We already supply the 25 datasets from the paper in our format in the folder: "DataSet Proj"  If you want to create your own dataset please see the example GPSFM\Preprocessing\ProcessScript.m script that generates our format (Example pro.mat) from the standard format (Example.mat). 
-projectivePipeline.m- script to run the pipeline. All the datasets from the paper are availble in the folder "DataSet Proj" and can be run using this script.
+ProcessScript.m- Script to generate our data format from the format of http://www.maths.lth.se/matematiklth/personal/calle/dataset/dataset.html. We already supply the 25 datasets from the paper in our format in the folder: "DataSet Proj"  If you want to create your own dataset please see the example GPSFM\Preprocessing\ProcessScript.m script that generates our format (Example pro.mat) from the standard format (Example.mat). 
+projectivePipeline.m- script to run the pipeline. All the datasets from the paper are available in the folder "DataSet Proj" and can be run using this script.
 projectivePipelineSelfCalibrate.m- pipeline that performs also self calibration
 runAll.m - script to run all the datasets in the paper. The script generates the results table and saves it to "table.csv" and also saves all the reconstructions after self calibration to the folder GPSFM\reconstructions
 
@@ -66,7 +66,7 @@ We use the following 3rdparties code:
 from motion (p2sfm)" (ICCV 2017). Their self calibration code implements the paper "Autocalibration via rank-constrained estimation of the
 absolute quadric" (CVPR 2007), and uses the libraries "GloptiPoly 3" and "SeDuMi 1.3"
 
-3rdparty\vgg_code - imlementation of basic functions from the book "Multiple View Geometry in Computer Vision" (2004) downloaded from:
+3rdparty\vgg_code - implementation of basic functions from the book "Multiple View Geometry in Computer Vision" (2004) downloaded from:
 https://www.robots.ox.ac.uk/~vgg/hzbook/code/
 
 ## Contact 
