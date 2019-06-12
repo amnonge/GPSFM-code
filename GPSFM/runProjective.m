@@ -74,7 +74,7 @@ end
 if ~exist('reconstructions', 'dir')
 	mkdir('reconstructions')
 end
-pcwrite(pointCloud(Xs_m(1:3,:)',uint8(255*colors)),sprintf('reconstructions/%s.ply',dataset));
+pcwrite(pointCloud(Xs_m(1:3,:)','Color',uint8(255*colors)),sprintf('reconstructions/%s.ply',dataset));
 savefig(sprintf('reconstructions/%s.fig',dataset));
 
 end
