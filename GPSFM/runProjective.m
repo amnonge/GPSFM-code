@@ -70,7 +70,7 @@ for i=1:3
 colors(:,i)=colors(:,i)-min(colors(:,i));
 colors(:,i)=colors(:,i)/max(colors(:,i));
 end
-pcwrite(pointCloud(Xs_m(1:3,:)','Color',colors),sprintf('reconstructions/%s.ply',dataset));
+pcwrite(pointCloud(Xs_m(1:3,:)',uint8(255*colors)),sprintf('reconstructions/%s.ply',dataset));
 savefig(sprintf('reconstructions/%s.fig',dataset));
 
 end
